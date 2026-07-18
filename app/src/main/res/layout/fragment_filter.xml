@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- STATE FILTER -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter by State"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/filter_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All Elements"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rb_solid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solid" />
+
+        <RadioButton
+            android:id="@+id/rb_liquid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liquid" />
+
+        <RadioButton
+            android:id="@+id/rb_gas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gas" />
+    </RadioGroup>
+
+    <!-- DIVIDER -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- BLOCK FILTER -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter by Block"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/filter_block_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_block_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All Blocks"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rb_block_s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="s-block (Groups 1-2)"
+            android:buttonTint="#EF5350"/>
+
+        <RadioButton
+            android:id="@+id/rb_block_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="p-block (Groups 13-18)"
+            android:buttonTint="#F57C00"/>
+
+        <RadioButton
+            android:id="@+id/rb_block_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="d-block (Transition Metals)"
+            android:buttonTint="#42A5F5"/>
+
+        <RadioButton
+            android:id="@+id/rb_block_f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="f-block (Lanthanoids/Actinoids)"
+            android:buttonTint="#66BB6A"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_apply_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>
